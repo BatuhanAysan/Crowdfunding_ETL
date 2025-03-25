@@ -56,37 +56,11 @@ The data cleaning and preparation steps were performed using Python (pandas) in 
 
 An Entity-Relationship Diagram (ERD) was created using QuickDBD. The schema follows normalization principles, with separate tables for categories, subcategories, campaigns, and contacts.
 
-### Schema Summary
+### 📌 Crowdfunding Database ERD
 
-#### `campaign`
-- `cf_id` (PK)  
-- `contact_id` (FK)  
-- `company_name`  
-- `description`  
-- `goal`  
-- `pledged`  
-- `outcome`  
-- `backers_count`  
-- `country`  
-- `currency`  
-- `launched_date`  
-- `end_date`  
-- `category_id` (FK)  
-- `subcategory_id` (FK)  
+![Crowdfunding Database Schema](crowdfunding_diagram.png)
 
-#### `contacts`
-- `contact_id` (PK)  
-- `first_name`  
-- `last_name`  
-- `email`  
-
-#### `category`
-- `category_id` (PK)  
-- `category`  
-
-#### `subcategory`
-- `subcategory_id` (PK)  
-- `subcategory`  
+This schema ensures normalization and enforces relationships between campaigns, contacts, categories, and subcategories via foreign keys.
 
 ---
 
